@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --exec \"node --no-warnings=ExperimentalWarning --loader ts-node/esm src/bot.ts\""
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node dist/bot.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +19,6 @@
   "devDependencies": {
     "@types/node": "^20.11.24",
     "nodemon": "^3.1.0",
-    "tsx": "^4.7.1",
     "typescript": "^5.3.3"
   }
 }

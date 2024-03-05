@@ -1,0 +1,8 @@
+{
+  "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/nodemon.json",
+  "watch": [
+      "**/*.ts"
+  ],
+  "ext": "ts",
+  "exec": "node --no-warnings=ExperimentalWarning --loader ts-node/esm src/bot.ts"
+}
