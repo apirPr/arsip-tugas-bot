@@ -5,16 +5,18 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon ts-node src/bot.ts"
+    "dev": "nodemon --exec \"node --no-warnings=ExperimentalWarning --loader ts-node/esm src/bot.ts\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.6.0"
+    "@whiskeysockets/baileys": "^6.6.0",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
+    "nodemon": "^3.1.0",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3"
   }
