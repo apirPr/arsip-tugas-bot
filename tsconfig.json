@@ -6,6 +6,12 @@
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
   },
   "includes": [
     "src/**/*.ts"
